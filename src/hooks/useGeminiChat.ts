@@ -2,8 +2,8 @@
 
 import { useState, useCallback } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { ChatMessage, GEMINI_API_URL, MAX_CHAT_TURNS } from '../types';
-import { StockEntry } from '../types';
+import type { ChatMessage, StockEntry } from '../types';
+import { GEMINI_API_URL, MAX_CHAT_TURNS } from '../types';
 import { buildSystemPrompt } from '../utils/portfolio';
 
 interface GeminiContent {

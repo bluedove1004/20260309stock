@@ -1,6 +1,6 @@
 // Portfolio aggregate calculation utilities
 
-import { StockEntry, PortfolioSummary, SectorSummary } from '../types';
+import type { StockEntry, PortfolioSummary, SectorSummary } from '../types';
 
 // Approximate KRW/USD conversion for display aggregation (user-set rate)
 const USD_TO_KRW_RATE = 1350;

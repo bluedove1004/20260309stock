@@ -1,7 +1,7 @@
 // Toast — Stack of toast notification messages
 
 import React, { useEffect } from 'react';
-import { ToastMessage } from '../types';
+import type { ToastMessage } from '../types';
 
 interface ToastProps {
     toasts: ToastMessage[];

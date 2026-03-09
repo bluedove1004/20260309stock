@@ -1,7 +1,7 @@
 // SummaryCards — Portfolio summary statistics cards
 
 import React from 'react';
-import { PortfolioSummary } from '../types';
+import type { PortfolioSummary } from '../types';
 import { formatKRW, formatUSD } from '../utils/formatters';
 
 interface SummaryCardsProps {

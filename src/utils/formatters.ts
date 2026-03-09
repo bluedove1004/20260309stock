@@ -1,6 +1,6 @@
 // Utility functions for formatting currency, dates, and numbers
 
-import { Currency } from '../types';
+import type { Currency } from '../types';
 
 /**
  * Format a number as Korean Won (₩) with thousands separators.

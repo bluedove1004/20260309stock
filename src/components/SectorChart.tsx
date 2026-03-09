@@ -9,7 +9,7 @@ import {
     Legend,
     ResponsiveContainer,
 } from 'recharts';
-import { SectorSummary } from '../types';
+import type { SectorSummary } from '../types';
 import { formatPercent } from '../utils/formatters';
 
 const COLORS = [

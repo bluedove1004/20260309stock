@@ -1,7 +1,8 @@
 // StockForm — Add and edit stock entry form
 
 import React, { useState, useEffect } from 'react';
-import { StockEntry, SECTORS, Currency } from '../types';
+import type { StockEntry, Currency } from '../types';
+import { SECTORS } from '../types';
 import { isValidDate, isPositiveNumber, isPositiveInteger } from '../utils/formatters';
 
 interface StockFormProps {
@@ -143,8 +144,8 @@ export const StockForm: React.FC<StockFormProps> = ({
                                     type="button"
                                     onClick={() => setForm((prev) => ({ ...prev, currency: c }))}
                                     className={`flex-1 py-2.5 rounded-xl text-sm font-medium border transition-all ${form.currency === c
-                                            ? 'bg-indigo-600 border-indigo-500 text-white'
-                                            : 'glass border-gray-700 text-gray-400 hover:border-gray-500'
+                                        ? 'bg-indigo-600 border-indigo-500 text-white'
+                                        : 'glass border-gray-700 text-gray-400 hover:border-gray-500'
                                         }`}
                                 >
                                     {c === 'KRW' ? '₩ KRW' : '$ USD'}
