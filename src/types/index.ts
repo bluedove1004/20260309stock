@@ -74,6 +74,6 @@ export const STORAGE_KEYS = {
     API_KEY: 'stockbook_apikey',
 } as const;
 
-export const GEMINI_MODEL = 'gemini-2.5-flash-preview-04-17';
-export const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+export const GEMINI_MODEL = 'gemini-1.5-flash';
+export const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1/models/${GEMINI_MODEL}:generateContent`;
 export const MAX_CHAT_TURNS = 20;
